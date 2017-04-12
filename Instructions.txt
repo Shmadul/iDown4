@@ -1,0 +1,60 @@
+Written By @shmadul 03/09/17 
+https://shmadul.coffeebreakers.space
+iDowngrade iPhone 4
+
+1. Remove The Following Programs in THIS EXACT ORDER !
+	->Apple Application Support
+	->Apple Mobile Device Support
+	->Apple Software Update
+	->Bonjour
+	->iTunes
+	
+2. Reboot (Optional)
+
+3. Download and install iTunes 11.0.5
+	->32bit: http://www.filehorse.com/download-itunes-32/13927/download/
+	->64bit: http://filehippo.com/download_itunes/download/23880643819d237a29b2fd5c557c7816/
+
+4. Remove The File C:\Users\<=Your_User_Name_Here=>\Music\iTunes\itunes.itl
+
+6. Dowload Latest Signed .iPSW for your iPhone 4 from https://ipsw.me
+	->Place in Same Folder as iDowngrade iPhone 4.exe, and iDown-file
+	
+7. Download the iPSW You want to Restore to from https://ipsw.me
+	-> Place in Same Folder as other iPSW, iDowngrade iPhone 4.exe, and iDown-file
+	
+8.Run iDowngrade iPhone 4.exe as Administrator
+	-> Where it says .iPSW to Downgrade To, Click the Down Arrow
+		and select the other ipsw (The one you want to Downgrade to)
+
+9. Get Root File System Key from Keys Folder (Same Folder as iDowngrade iPhone 4.exe, and iDown-file)
+	->Open the Text file Corresponding With Your Device Model (ie: iPhone3,3 open iPhone3,3.txt)
+	->Then Look for The Firmware Version You want to Downgrade To and Copy the Key Listed
+	-> Now, Go Back to the iDowngrade iPhone 4 Window 
+		->Paste the Copied Key into the text box labled "Root File System Key For, Downgrade .iPSW"
+		->Press Button Labled "Make Downgrade .iPSW"
+		->Let Your Computer Sit for ~5 Mins
+		
+10. Once Done You Should Have a Suns9-tethered-downgrade-XXXX.ipsw file in the iDown4 Folder
+	-> Use iReb.exe (located in iDown4 Folder) and Select iPhone 4
+	-> Put Your iPhone into DFU as Instructed
+	-> Once finished putting device into Pwned dfu mode, Open itunes 11.0.5
+	-> Hold the shift key and click restore
+	-> Locate the Suns9-tethered-downgrade-XXXX.ipsw in the iDown4 Folder and Select iTunes
+	-> Let iTunes Finish Restoring
+
+11. Once Finished Your Device Should be in a Recovery Mode Screen (Showing Connect to iTunes)
+	-> Open redsn0w.exe 
+		->Click Extras
+		->Select iPSW
+		->Go to the iDown4 Folder, and Select the Unsigned iPSW you placed here earier
+			(not Suns9-tethered-downgrade-xxxx)
+		->Click Just Boot
+		->Follow Instructions to Put Device in Dfu Mode
+		->Wait until Device Loads
+
+Note Step 11 will need to be repeated EVERYTIME you TURN OFF OR REBOOT your Device
+	Have issues ? Contact me via twitter @shmadul
+		-> I really Hope You Guys Enjoy this tutorial and tool
+		-> If You want to help me make more stuff like this,
+		->Donate to my PayPal: masonpc@live.com
